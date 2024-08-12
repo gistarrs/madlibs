@@ -1,11 +1,14 @@
 library(shiny)
 
+cat(strep("-", 100), "Initiating\n", file = stderr()) 
+
 generate_story <- function(noun, verb, adjective, adverb) {
   glue::glue("
     Once upon a time, there was a {adjective} {noun} who loved to
     {verb} {adverb}. It was the funniest thing ever!
   ")
 }
+
 
 ui <- fluidPage(
   titlePanel("Mad Libs Game"),
@@ -32,5 +35,7 @@ server <- function(input, output) {
     story()
   })
 }
+
+cat(strep("-", 100), "Completed! \n", file = stderr()) 
 
 shinyApp(ui = ui, server = server)
