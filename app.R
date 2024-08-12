@@ -1,6 +1,6 @@
 library(shiny)
 
-cat(strrep("-", 100), "Initiating\n", file = stderr()) 
+cat(strrep("-", 100), "🐀🐁 Initiating 🐁🐀 \n", file = stderr()) 
 
 generate_story <- function(noun, verb, adjective, adverb) {
   glue::glue("
@@ -36,6 +36,6 @@ server <- function(input, output) {
   })
 }
 
-cat(strrep("-", 100), "Completed! \n", file = stderr()) 
+cat(strrep("-", 100), "✨ Completed! ✨\n", file = stderr()) 
 
 shinyApp(ui = ui, server = server)
