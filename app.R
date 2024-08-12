@@ -30,8 +30,8 @@ ui <- fluidPage(
 server <- function(input, output) {
   story <- eventReactive(input$submit, {
     generate_story(input$noun1, input$verb, input$adjective, input$adverb)
-    cat(strrep("-", 100), "🐁 Generating story! 🐀 \n", file = stderr()) 
   })
+  cat(strrep("-", 100), "🐁 Generating story! 🐀 \n", file = stderr())
   output$story <- renderText({
     story()
   })
