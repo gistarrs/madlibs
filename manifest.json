@@ -1067,8 +1067,11 @@
     }
   },
   "files": {
+    ".RData": {
+      "checksum": "5c103d4eb0f3cfe1d9fcd5595e7e461f"
+    },
     "app.R": {
-      "checksum": "913667ebd5a1bcaa927aa83faec559f1"
+      "checksum": "0650246a264f57ac6dc9a77775083df9"
     },
     "madlibs.html": {
       "checksum": "bd328280f9dc1be9af1aff31320eddcf"
